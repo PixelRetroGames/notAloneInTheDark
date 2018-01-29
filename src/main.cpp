@@ -1,4 +1,5 @@
 #include "settings.h"
+#include "game.h"
 
 #include <cstdio>
 #include <ctime>
@@ -54,6 +55,12 @@ int main( int argc, char *args[] )
     }
  Flip_Buffers(screen);
  //static_screen=screen;
-
+ Init_Controllers();
+ Load_levels_paths();
+ Load_effects();
+ Game game;
+ game.Load();
+ game.Start(screen);
+ game.Clear();
  return 0;
 }
