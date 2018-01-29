@@ -1,0 +1,2 @@
+#!AloneInTheDark
+Escape the maze
